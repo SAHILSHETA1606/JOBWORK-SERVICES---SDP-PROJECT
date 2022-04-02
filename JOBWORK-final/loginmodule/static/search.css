@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('image/HOME-1.jpg') no-repeat;
+    height: 100vh;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden
+  }
+
+.heading{
+    color:black;
+    font-size: 25px;
+  }
+  .friend{
+    height:70px;
+  width:330px;
+    border-bottom:1px solid #e7ebee;		
+    
+}
+.friend:hover{
+    background:#f1f4f6;
+    cursor:pointer;
+}
+.friend img{
+    width:40px;
+    border-radius:50%;
+    margin-left:15px;
+    margin-right:15px;  
+    margin-top:10px;  
+    float:left;
+}
+.friend p{
+    padding:15px 0 0 0;			
+    float:left;
+    width:220px;
+}
+.friend p strong{
+  font-weight:600;
+  font-size:15px;
+    color:#597a96;  
+
+}
+.friend p strong a{
+  font-weight:600;
+  font-size:15px;
+    color:black;
+  text-decoration: none;  
+
+}
+.chatscreen{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  width: 400px;
+  min-height: 500px;
+  background: grey;
+  border-radius: 10px;
+  padding: 40px;
+  box-sizing: border-box;
+  
+}

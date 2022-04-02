@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'search.css'%}">
+</head>
+
+    
+
+    <div class="chatscreen">
+        <div class="heading">
+          ALL AVAILABLE RESULT:
+        </div>
+        {% for user in usernamelist %}
+          <div class="friend">
+            <img src="{% static 'image/user prof pic.png' %}"/>
+            <p>
+              <strong><a href ="/profilesearch/{{user.uname}}"">
+                {{user.uname}}<br></a></strong>
+              </p>
+          </div>
+            {%endfor%}
+        {% for company in companynamelist %}
+        <div class="friend">
+            <p>
+                <strong><a href ="/profilesearch/{{user.uname}}"">
+                    {{company.companyname}}<br></a></strong>
+                </p>
+        </div>
+        {%endfor%}
+
+    </div>
+</body>
+
+</html>
+

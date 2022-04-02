@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css%}<link rel="stylesheet" href="{% static 'home.css' %}">{%endblock%}
+
+
+
+{% block title%}HOME{%endblock%}
+
+{% block body%}
+
+<!-- <div class="divcontainer">
+  <img src="{% static 'image/HOME-1.jpg' %}" class="img-fluid" > -->
+    <div class="upload-jobs">
+      <div class="card">
+        <img src="{%static 'image/factory.jpg'%}" >
+        <h1>upload jobs</h1>
+        <p>upload description of job of your product </p>
+        <p><div class="BUT1">  
+          <div class="product-price-btn">
+            <a href="{% url 'Job' %}" >  
+            <button type="button" name="job-upload" >UPLOAD JOB</button>
+            </a>
+          </div>
+        </div></p>
+      </div>
+    </div>
+    <div class="find-jobs">
+      <div class="card">
+        <img src="{%static 'image/job search.jpg'%}" >
+        <h1>find jobs</h1>
+        <p>find most suitable job work for your company </p>
+        <p><div class="BUT2">  
+          <div class="product-price-btn">
+            <a href="{% url 'viewjob'%} ">
+              <button type="button" name="view-job">FIND JOBS</button>
+            </a>
+          </div>
+        </div></p>
+      </div>
+    </div>
+  <div class="feature">
+    <div class="history">
+      <div class="card text-center">
+        <div class="card-header">
+          explore
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">History</h5>
+          <p class="card-text">History of your previous deals</p>
+          <div class="product-price-btn">
+            <a href="{% url 'allhistory' %}">
+              <button type="button" name="History">History</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jobs">
+      <div class="card text-center">
+        <div class="card-header">
+          explore
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">My Jobs</h5>
+          <p class="card-text">Jobs uploaded by you</p>
+          <div class="product-price-btn">
+            <a href="{% url 'myjobs' %}">
+              <button type="button" name="my-jobs">My Jobs</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deals">
+      <div class="card text-center">
+        <div class="card-header">
+          explore
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Deal</h5>
+          <p class="card-text">Deal requets for your uploaded jobs</p>
+          <div class="product-price-btn">
+            <a href="{% url 'alldeals' %}">
+              <button type="button" name="my-jobs">Deals</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Simple Idea to Provide the plateform to industries where they can POST jobwork as a manufacturer and as job worker can FIND best suitable job for his company.For negotiation we provide the chat feature.Other features like History,My jobs and Deal Requests</p>
+          </div>
+
+          <!-- <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/"></a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-xs-6 col-md-3">
+            <h6>About Developer</h6>
+            <ul class="footer-links">
+              <li>Sahil Sheta</li>
+              <li>sahilsheta505@gmail.com</li>
+              <li>Vishnu Sanariya</li>
+              <li>vishnusanariya98@gmail.com</li>
+              <li>Dharmsinh Desai University,Nadiad,Gujarat,India</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by Vishnu & Sahil
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+  <!-- <div class="features">
+    <div class="container">
+      <div class="product-price-btn">
+        <a href="{% url 'gotochat' %}">
+          <button type="button" name="chat">chat</button>
+        </a>
+      </div>
+      <div class="product-price-btn">
+        <a href="{% url 'allhistory' %}">
+          <button type="button" name="history">history</button>
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <!-- <div class="BUT1">  
+    <div class="product-price-btn">
+      <a href="{% url 'Job' %}" >  
+      <button type="button" name="job-upload" >UPLOAD JOB</button>
+      </a>
+    </div>
+  </div>
+  <div class="BUT2">  
+    <div class="product-price-btn">
+      <a href="{% url 'viewjob'%} ">
+        <button type="button" name="view-job">FIND JOBS</button>
+      </a>
+      
+    </div>
+    
+  </div> -->
+<!-- </div> -->
+
+
+{%endblock%}
